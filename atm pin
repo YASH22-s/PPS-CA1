@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int pin, attempts = 0;
+    const int correctPin = 2209;
+
+    while(attempts < 3) {
+        printf("Enter your 4-digit ATM PIN: ");
+        scanf("%d", &pin);
+
+        if(pin == correctPin) {
+            printf("✅ Access Granted. collect your money!\n");
+            return 0; // Exit program
+        } else {
+            attempts++;
+            printf("❌ Incorrect PIN. Attempts left: %d\n", 3 - attempts);
+        }
+    }
+
+    printf("🚫 Card Blocked. You have entered the wrong PIN 3 times.\n");
+    return 0;
+}
