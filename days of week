@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    printf("Days of the Week:\n");
+
+    printf("1. Sunday\n");
+    printf("2. Monday\n");
+    printf("3. Tuesday\n");
+    printf("4. Wednesday\n");
+    printf("5. Thursday\n");
+    printf("6. Friday\n");
+    printf("7. Saturday\n");
+
+    return 0;
+}
+
